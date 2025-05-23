@@ -1,0 +1,116 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #34495e;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 0.3rem;
+}
+
+main {
+  background-color: white;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #ecf0f1;
+  margin: 0.5rem 0;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #bdc3c7;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+#subscribe {
+  background-color: #1abc9c;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 960px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#subscribe input[type="email"] {
+  padding: 0.5rem;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+#subscribe button {
+  background-color: #16a085;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#subscribe button:hover {
+  background-color: #13876b;
+}

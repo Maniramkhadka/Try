@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ne">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact - BizCraft</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | National Mobile Butwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Contact Us</h1>
-  <form>
-    <input type="text" placeholder="Your Name" required><br><br>
-    <input type="email" placeholder="Your Email" required><br><br>
-    <textarea placeholder="Your Message"></textarea><br><br>
-    <button type="submit">Send</button>
-  </form>
+  
+    <header>
+      <h1>National Mobile Butwal</h1>
+      <nav>
+        <a href="index.html" >Home</a>
+        <a href="mobile.html" >Mobile</a>
+        <a href="mobile-price.html" >Mobile Price</a>
+        <a href="accessories.html" >Accessories</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+    
+  <main>
+    <h2>Contact Us</h2>
+    
+<p>हामीलाई सम्पर्क गर्न तलको फारम प्रयोग गर्नुहोस्:</p>
+<form id="contactForm">
+  <label for="name">नाम:</label><br />
+  <input type="text" id="name" name="name" required /><br /><br />
+  <label for="email">इमेल:</label><br />
+  <input type="email" id="email" name="email" required /><br /><br />
+  <label for="message">सन्देश:</label><br />
+  <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+  <button type="submit">Send</button>
+</form>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('धन्यवाद! तपाईंको सन्देश प्राप्त भयो।');
+    this.reset();
+  });
+</script>
+
+  </main>
+  
+    <section id="subscribe">
+      <h3>Subscribe to our Newsletter</h3>
+      <form id="subscribeForm">
+        <input type="email" id="subscriberEmail" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="subscribeMessage" style="display:none; color:green; margin-top: 0.5rem;"></p>
+    </section>
+    
+  
+    <footer>
+      <p>&copy; 2025 National Mobile Butwal. All rights reserved.</p>
+    </footer>
+    
 </body>
 </html>

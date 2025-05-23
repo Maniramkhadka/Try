@@ -3,35 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>National Mobile Butwal - Home</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; color:#333; }
-    header { background:#003366; color:#fff; padding:1rem; text-align:center; }
-    nav { background:#00509e; display:flex; justify-content:center; }
-    nav a { color:#fff; padding:1rem; text-decoration:none; }
-    nav a:hover { background:#003f7d; }
-    .hero { background:#e0ecf8; padding:2rem; text-align:center; }
-    footer { background:#003366; color:#fff; text-align:center; padding:1rem; margin-top:2rem; }
-  </style>
+  <title>Home | National Mobile Butwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>National Mobile Butwal</h1>
-    <p>Butwalको भरपर्दो मोबाइल पसलमा स्वागत छ।</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="mobile-price.html">Mobile Price</a>
-    <a href="register.html">Register</a>
-    <a href="login.html">Login</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="hero">
+  
+    <header>
+      <h1>National Mobile Butwal</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="mobile.html" >Mobile</a>
+        <a href="mobile-price.html" >Mobile Price</a>
+        <a href="accessories.html" >Accessories</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </header>
+    
+  <main>
     <h2>Welcome to National Mobile Butwal</h2>
-    <p>यहाँ तपाईंलाई नयाँ मोबाइलहरू, अफरहरू र सेवा उपलब्ध छन्।</p>
-  </div>
-  <footer>
-    <p>&copy; 2025 National Mobile Butwal</p>
-  </footer>
+    <p>Best deals on smartphones in Butwal!</p>
+  </main>
+  
+    <section id="subscribe">
+      <h3>Subscribe to our Newsletter</h3>
+      <form id="subscribeForm">
+        <input type="email" id="subscriberEmail" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="subscribeMessage" style="display:none; color:green; margin-top: 0.5rem;"></p>
+    </section>
+    
+  
+    <footer>
+      <p>&copy; 2025 National Mobile Butwal. All rights reserved.</p>
+    </footer>
+    
 </body>
 </html>
